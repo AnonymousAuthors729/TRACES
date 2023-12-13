@@ -61,7 +61,7 @@ This section describes the steps to run the exploit detection example. First, se
 
 ### Expected results - Benign Scenario
 
-When either `benign.s` is selected, the expected console output is below: 
+When either benign input is received by the application, all verification checks pass: 
 
 ![console output benign-access](./demo-benign.png)
 
@@ -69,8 +69,8 @@ Verifier will determine that the reported CFLog abides by the CFG, Prv memory is
  
 ### Expected results - Attack Scenario
 
-When `malicious.s` is selected, the expected console output is below:
+When malicious input is used to cause an attack, TRACES ensures the attack is detected through validating the CFLog
 
 ![console output malicious-access](./demo-attack.png)
 
-During this execution, the signature is determined to be valid. But, the contents of the CFLog denote a control-flow attack occurred due to the buffer overflow incurred by the malicious input. Because of TRACES triggers, the attack is identified in the next report received by Vrf.
+The contents of the CFLog denote a control-flow attack occurred due to a buffer overflow and causes repeated execution of `process_command` function. Because of TRACES triggers, the attack is identified in the report received by Vrf.
