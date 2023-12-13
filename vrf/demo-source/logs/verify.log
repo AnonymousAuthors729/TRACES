@@ -1,0 +1,3216 @@
+ 
+Current node
+start_addr: 0x80406b4
+end_addr: 0x80406b8
+type: call
+instrs: 3
+instruction: bl
+instruction arg: 80405b8 <process_command>
+successors: ['0x80405b8']
+log_node.dest_addr: 0x8040586
+PUSH to shadow stack: 0x80406bc
+ 
+Current node
+start_addr: 0x80405b8
+end_addr: 0x80405ce
+type: call
+instrs: 11
+instruction: bl
+instruction arg: 804057a <read_command>
+successors: ['0x804057a']
+log_node.dest_addr: 0x8040586
+PUSH to shadow stack: 0x80405d2
+ 
+Current node
+start_addr: 0x804057a
+end_addr: 0x8040584
+type: uncond
+instrs: 6
+instruction: b.n
+instruction arg: 804059e <read_command+0x24>
+successors: ['0x804059e']
+log_node.dest_addr: 0x8040586
+-----
+changed node
+start_addr: 0x804059e
+end_addr: 0x80405a4
+type: cond
+instrs: 4
+instruction: bne.n
+instruction arg: 8040586 <read_command+0xc>
+successors: ['0x8040586']
+-----
+ 
+Current node
+start_addr: 0x8040586
+end_addr: 0x80405a4
+type: cond
+instrs: 15
+instruction: bne.n
+instruction arg: 8040586 <read_command+0xc>
+successors: ['0x8040586']
+log_node.dest_addr: 0x80405a6
+ 
+Current node
+start_addr: 0x80405a6
+end_addr: 0x80405b2
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80405d2
+POP from shadow stack: 0x80405d2
+ 
+Current node
+start_addr: 0x80405d2
+end_addr: 0x80405d6
+type: cond
+instrs: 3
+instruction: beq.n
+instruction arg: 8040600 <process_command+0x48>
+successors: ['0x8040600']
+log_node.dest_addr: 0x80405d8
+ 
+Current node
+start_addr: 0x80405d8
+end_addr: 0x80405de
+type: cond
+instrs: 3
+instruction: beq.n
+instruction arg: 80405ee <process_command+0x36>
+successors: ['0x80405ee']
+log_node.dest_addr: 0x80405ee
+ 
+Current node
+start_addr: 0x80405ee
+end_addr: 0x80405fe
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040666 <process_command+0xae>
+successors: ['0x8040666']
+log_node.dest_addr: 0x80406bc
+-----
+changed node
+start_addr: 0x8040666
+end_addr: 0x8040674
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+-----
+POP from shadow stack: 0x80406bc
+ 
+Current node
+start_addr: 0x80406bc
+end_addr: 0x80406c2
+type: cond
+instrs: 4
+instruction: beq.n
+instruction arg: 80406fa <application+0x46>
+successors: ['0x80406fa']
+log_node.dest_addr: 0x80406c4
+ 
+Current node
+start_addr: 0x80406c4
+end_addr: 0x80406ca
+type: cond
+instrs: 3
+instruction: beq.n
+instruction arg: 80406da <application+0x26>
+successors: ['0x80406da']
+log_node.dest_addr: 0x80406da
+ 
+Current node
+start_addr: 0x80406da
+end_addr: 0x80406e0
+type: call
+instrs: 3
+instruction: bl
+instruction arg: 8040694 <record_output_data>
+successors: ['0x8040694']
+log_node.dest_addr: 0x80406e4
+PUSH to shadow stack: 0x80406e4
+ 
+Current node
+start_addr: 0x8040694
+end_addr: 0x80406ae
+type: ret
+instrs: 13
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80406e4
+POP from shadow stack: 0x80406e4
+ 
+Current node
+start_addr: 0x80406e4
+end_addr: 0x80406f8
+type: uncond
+instrs: 11
+instruction: b.n
+instruction arg: 8040738 <application+0x84>
+successors: ['0x8040738']
+log_node.dest_addr: 0x8040498
+-----
+changed node
+start_addr: 0x8040738
+end_addr: 0x8040746
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8041040 <__SECURE_log_call_veneer>
+successors: ['0x8041040']
+-----
+PUSH to shadow stack: 0x804074a
+ 
+Current node
+start_addr: 0x8040498
+end_addr: 0x80404a8
+type: uncond
+instrs: 9
+instruction: b.n
+instruction arg: 80404c6 <run_ultrasonic+0x2e>
+successors: ['0x80404c6']
+log_node.dest_addr: 0x80404aa
+-----
+changed node
+start_addr: 0x80404c6
+end_addr: 0x80404cc
+type: cond
+instrs: 4
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+-----
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404aa
+ 
+Current node
+start_addr: 0x80404aa
+end_addr: 0x80404ae
+type: call
+instrs: 2
+instruction: bl
+instruction arg: 8040454 <getUltrasonicReading>
+successors: ['0x8040454']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x8040454
+end_addr: 0x8040464
+type: call
+instrs: 8
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040468
+POP from shadow stack: 0x8040468
+ 
+Current node
+start_addr: 0x8040468
+end_addr: 0x8040472
+type: call
+instrs: 5
+instruction: bl
+instruction arg: 8040238 <delay>
+successors: ['0x8040238']
+log_node.dest_addr: 0x8040246
+PUSH to shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040238
+end_addr: 0x8040244
+type: uncond
+instrs: 7
+instruction: b.n
+instruction arg: 8040250 <delay+0x18>
+successors: ['0x8040250']
+log_node.dest_addr: 0x8040246
+-----
+changed node
+start_addr: 0x8040250
+end_addr: 0x8040256
+type: cond
+instrs: 4
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+-----
+ 
+Current node
+start_addr: 0x8040246
+end_addr: 0x8040256
+type: cond
+instrs: 8
+instruction: bcc.n
+instruction arg: 8040246 <delay+0xe>
+successors: ['0x8040246']
+log_node.dest_addr: 0x8040258
+ 
+Current node
+start_addr: 0x8040258
+end_addr: 0x8040264
+type: ret
+instrs: 5
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: ['0x8040468', '0x8040476']
+log_node.dest_addr: 0x8040476
+POP from shadow stack: 0x8040476
+ 
+Current node
+start_addr: 0x8040476
+end_addr: 0x804047e
+type: call
+instrs: 4
+instruction: bl
+instruction arg: 8040408 <pulseIn>
+successors: ['0x8040408']
+log_node.dest_addr: 0x8040418
+PUSH to shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040408
+end_addr: 0x8040416
+type: uncond
+instrs: 8
+instruction: b.n
+instruction arg: 8040432 <pulseIn+0x2a>
+successors: ['0x8040432']
+log_node.dest_addr: 0x8040418
+-----
+changed node
+start_addr: 0x8040432
+end_addr: 0x8040438
+type: cond
+instrs: 3
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+-----
+ 
+Current node
+start_addr: 0x8040418
+end_addr: 0x8040438
+type: cond
+instrs: 14
+instruction: blt.n
+instruction arg: 8040418 <pulseIn+0x10>
+successors: ['0x8040418']
+log_node.dest_addr: 0x804043a
+ 
+Current node
+start_addr: 0x804043a
+end_addr: 0x804044a
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x8040482
+POP from shadow stack: 0x8040482
+ 
+Current node
+start_addr: 0x8040482
+end_addr: 0x8040490
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x80404b2
+POP from shadow stack: 0x80404b2
+ 
+Current node
+start_addr: 0x80404b2
+end_addr: 0x80404cc
+type: cond
+instrs: 13
+instruction: blt.n
+instruction arg: 80404aa <run_ultrasonic+0x12>
+successors: ['0x80404aa']
+log_node.dest_addr: 0x80404ce
+ 
+Current node
+start_addr: 0x80404ce
+end_addr: 0x80404de
+type: ret
+instrs: 7
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0x804074a
+POP from shadow stack: 0x804074a
+ 
+Current node
+start_addr: 0x804074a
+end_addr: 0x804074e
+type: ret
+instrs: 2
+instruction: b.w
+instruction arg: 8041000 <__SECURE_log_ret_veneer>
+successors: []
+log_node.dest_addr: 0xfefffffe
